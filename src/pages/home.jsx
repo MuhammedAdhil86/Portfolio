@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../components/navbar/navbar';
-import HeroPart from '../components/hero_folder/hero';
+
 import About from '../components/aboutme/about'
 import PageWrapper from "../components/pagewrapper";
 import Skills from '../components/skills/skills';
 import Projects from '../components/project/project';
 import Contact from '../components/contact/contact';
 import Footer from '../components/footer/footer';
+import HeroPart from '../components/hero-pack/heropart';
 
 
 
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <PageWrapper>
       <Navbar />
-      <HeroPart />
+      <HeroPart/>
       <About />
     
    <Skills/>
