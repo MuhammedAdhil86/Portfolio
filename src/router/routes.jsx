@@ -1,16 +1,17 @@
-import Layout from "../components/layout";          // wraps all pages
+// src/router/routes.js
+import Layout from "../components/layout";
 import Home from "../pages/home";
 import Introduction from "../pages/introduction";
-import NotFound from "../components/error/error";            // catch‑all 404 page
+import NotFound from "../components/error/error";
 
 const routes = [
   {
     path: "/",
-    element: <Layout />,          // <Outlet/> must be inside Layout
+    element: <Layout />,
     children: [
-      { index: true, element: <Introduction /> },  // renders at "/"
-      { path: "home", element: <Home /> },         // renders at "/home"
-      { path: "*", element: <NotFound /> },        // anything else → 404
+      { index: true, element: <Introduction /> },
+      { path: "home", element: <Home /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ];
