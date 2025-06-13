@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.writing-svg {
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  fill: none;
+  stroke: black;
+  stroke-width: 1.8px;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: draw 6s ease forwards, fillin 1s ease forwards 6s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillin {
+  to {
+    fill: black;
+  }
+}
