@@ -21,39 +21,40 @@ export default function Footer() {
           © 2025 Muhammed Adhil
         </h3>
 
-        {/* Social Links */}
-        <div className="flex space-x-6 text-xl">
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-400 transition"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://linkedin.com/in/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-400 transition"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            href="mailto:adhilnizar86@gmail.com"
-            className="hover:text-gray-400 transition"
-          >
-            <FaEnvelope />
-          </a>
-          <a
-            href="https://instagram.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-400 transition"
-          >
-            <FaInstagram />
-          </a>
-        </div>
+  {/* Social Links */}
+<div className="flex space-x-6 text-xl">
+  <a
+    href="https://github.com/MuhammedAdhil86/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-gray-400 transition"
+  >
+    <FaGithub />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/muhammed-adhil-991701230/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-gray-400 transition"
+  >
+    <FaLinkedin />
+  </a>
+  <a
+    href="mailto:adhilnizar86@gmail.com"
+    className="hover:text-gray-400 transition"
+  >
+    <FaEnvelope />
+  </a>
+  <a
+    href="https://instagram.com/adhil_nizar"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-gray-400 transition"
+  >
+    <FaInstagram />
+  </a>
+</div>
+
       </div>
     </motion.footer>
   );

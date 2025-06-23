@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaTwitter, FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -31,7 +31,11 @@ export default function Hero() {
         </motion.div>
 
         {/* Portfolio Button */}
-        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mb-14">
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="mb-14"
+        >
           <Link to="/home">
             <button className="border-2 border-black px-8 py-3 text-lg uppercase tracking-wider hover:bg-black hover:text-white transition duration-300">
               Portfolio
@@ -39,7 +43,7 @@ export default function Hero() {
           </Link>
         </motion.div>
 
-        {/* Contact Section */}
+        {/* Social Links */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -47,17 +51,39 @@ export default function Hero() {
           className="text-center"
         >
           <h3 className="text-lg uppercase tracking-widest mb-6">Get in Touch</h3>
-          <div className="flex justify-center space-x-6">
-            <motion.a whileHover={{ y: -5 }} href="#" className="text-2xl hover:text-gray-600 transition">
+          <div className="flex justify-center space-x-6 text-2xl">
+            <motion.a
+              whileHover={{ y: -5 }}
+              href="https://instagram.com/adhil_nizar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-600 transition"
+            >
               <FaInstagram />
             </motion.a>
-            <motion.a whileHover={{ y: -5 }} href="#" className="text-2xl hover:text-gray-600 transition">
-              <FaTwitter />
-            </motion.a>
-            <motion.a whileHover={{ y: -5 }} href="#" className="text-2xl hover:text-gray-600 transition">
+            <motion.a
+              whileHover={{ y: -5 }}
+              href="mailto:adhilnizar86@gmail.com"
+              className="hover:text-gray-600 transition"
+            >
               <FaEnvelope />
             </motion.a>
-            <motion.a whileHover={{ y: -5 }} href="https://www.linkedin.com/in/muhammed-adhil-991701230/" className="text-2xl hover:text-gray-600 transition">
+            <motion.a
+              whileHover={{ y: -5 }}
+              href="https://github.com/MuhammedAdhil86/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-600 transition"
+            >
+              <FaGithub />
+            </motion.a>
+            <motion.a
+              whileHover={{ y: -5 }}
+              href="https://www.linkedin.com/in/muhammed-adhil-991701230/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gray-600 transition"
+            >
               <FaLinkedin />
             </motion.a>
           </div>
