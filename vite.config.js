@@ -3,8 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // required for relative paths in production
-  build: {
-    outDir: 'dist'
-  }
+  base: '/', // Keep this if you're deploying to root
 })
